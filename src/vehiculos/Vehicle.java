@@ -16,7 +16,9 @@ public class Vehicle {
 	}
 	public void Desaccelerar(){
 		
-		
+		if (velocidad_actual > 0){
+			velocidad_actual = velocidad_actual-10;
+		}
 	}
 }
 
