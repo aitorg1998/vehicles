@@ -6,4 +6,9 @@ public class Vehicle {
 		int cilindrada, puertas, velocidad_actual=0;
 		velocidad_actual=velocidad_actual+10;
 	}
+	public void accelerar(){
+		int cilindrada, puertas, velocidad_actual=0;
+		velocidad_actual=velocidad_actual+10;
+	}
 }
+
