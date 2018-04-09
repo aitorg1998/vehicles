@@ -2,13 +2,17 @@ package vehiculos;
 
 public class Vehicle {
 	private static int VELOCIDAD_MAXIMA = 120;
+	public int cilindrada, puertas, velocidad_actual;
 	public void Accelerar(){
-		int cilindrada, puertas, velocidad_actual;
+		
 		velocidad_actual=velocidad_actual+10;
 	}
 	public void accelerar(){
-		int cilindrada, puertas, velocidad_actual;
-		velocidad_actual=velocidad_actual+10;
+		
+		while (velocidad_actual <=VELOCIDAD_MAXIMA){
+			velocidad_actual=velocidad_actual+10;
+		}
+		
 	}
 }
 
