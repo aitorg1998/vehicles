@@ -9,9 +9,13 @@ public class Vehicle {
 	}
 	public void accelerar(){
 		
-		while (velocidad_actual <=VELOCIDAD_MAXIMA){
+		if (velocidad_actual <=VELOCIDAD_MAXIMA){
 			velocidad_actual=velocidad_actual+10;
 		}
+		
+	}
+	public void Desaccelerar(){
+		
 		
 	}
 }
