@@ -2,12 +2,13 @@ package vehiculos;
 
 public class Vehicle {
 	private static int VELOCIDAD_MAXIMA = 120;
-	public int cilindrada, puertas, velocidad_actual;
+	public int cilindrada, puertas, velocidad_actual,marxes=5, marxaActual;
 
 	
 	public Vehicle() {
 
 		this.velocidad_actual = 0;
+		this.marxaActual=0;
 	}
 
 
@@ -26,6 +27,16 @@ public class Vehicle {
 		
 		if (velocidad_actual > 0){
 			velocidad_actual = velocidad_actual-10;
+		}
+	}
+	public void pujaMarxa(){
+		if (marxaActual<5){
+			marxaActual++;
+		}
+	}
+	public void baixaMarxa(){
+		if (marxaActual>0){
+			marxaActual--;
 		}
 	}
 }
